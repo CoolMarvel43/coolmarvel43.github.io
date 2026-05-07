@@ -16,7 +16,7 @@ timezone: Asia/Singapore
 
 title: The CJK Tinkerer # the main title
 
-tagline: A personal website for my journey in Chinese/Japanese type. # it will display as the subtitle
+tagline: A personal website for my journey in Chinese/Japanese type # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A personal website for my journey in Chinese/Japanese Type. Also used to document my ongoing project to improve Source Han Sans/Serif (or Noto Sans/Serif CJK).
