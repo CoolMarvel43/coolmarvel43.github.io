@@ -13,11 +13,105 @@
 /* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Override font variables */
-body {
-  font-family: 'Fira Sans', system-ui, Arial, sans-serif !important;
+/* =====================================================
+   COLOURS HERE
+   ===================================================== */
+
+html {
+  @media (prefers-color-scheme: dark) {
+
+    /* Default (system dark) OR user clicked dark toggle */
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      --sidebar-bg:           #131320;
+      --sidebar-active-color: #ffffff;
+      --sidebar-muted-color:  #ffffff;
+      --sidebar-btn-color:    #ffffff;
+      --sidebar-hover-bg:     #9b5d00;
+      --site-title-color:     #ffffff;
+      --site-subtitle-color:  #ffffff;
+      --topbar-bg:            #000000;
+      --topbar-text-color:    #ffffff;
+      --main-bg:              #000000;
+      --body-bg:              #000000;
+      --text-color:           #ffffff;
+      --text-muted-color:     #dbdbdb;
+      --heading-color:        #ffffff;
+      --link-color:           #ff9900;
+      --link-underline-color: #ff9900;
+      --card-bg:              #000000;
+      --card-header-bg:       #22201b;
+      --card-hover-bg:        #2e281f;
+      --post-list-text-color: #ffffff;
+      --avatar-border-color:  #9b5d00;
+    }
+
+    /* User clicked light toggle while system is dark */
+    &[data-mode='light'] {
+      --sidebar-bg:           #d9ecff;
+      --sidebar-active-color: #e65100;
+      --sidebar-muted-color:  #000000;
+      --sidebar-btn-color:    #000000;
+      --sidebar-hover-bg:     #ffe3ba;
+      --site-title-color:     #000000;
+      --site-subtitle-color:  #000000;
+      --topbar-bg:            #ffffff;
+      --topbar-text-color:    #000000;
+      --main-bg:              #ffffff;
+      --body-bg:              #ffffff;
+      --text-color:           #000000;
+      --text-muted-color:     #696969;
+      --heading-color:        #000000;
+      --link-color:           #e65100;
+      --link-underline-color: #e65100;
+      --card-bg:              #ffffff;
+      // --card-header-bg:       #dddfe4; // does not exist while in light mode
+      --card-hover-bg:        #d9e4f2;
+      --post-list-text-color: #212121;
+      --avatar-border-color:  #9b5d00;
+    }
+
+  }
 }
 
+/* =====================================================
+   FIX: sidebar icon opacity to match sidebar text colour
+   ===================================================== */
+#sidebar .nav-item .nav-link i {
+  opacity: 1 !important;
+  color: inherit !important;
+}
+
+#sidebar .nav-item .nav-link.active i {
+  opacity: 1 !important;
+}
+
+/* =====================================================
+   ARCHIVE PAGE — row backgrounds
+   ===================================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  /* Dark mode odd rows */
+  html:not([data-mode]) #archives li:nth-child(odd),
+  html[data-mode='dark'] #archives li:nth-child(odd) {
+    background-image: none !important;
+    background-color: #22201b !important;
+  }
+
+  /* Light mode odd rows (user toggled light while system is dark) */
+  html[data-mode='light'] #archives li:nth-child(odd) {
+    background-image: none !important;
+    background-color: #ecf2f8 !important; /* a light blue tint to match your light sidebar */
+  }
+
+}
+
+/* =====================================================
+   FONTS HERE
+   ===================================================== */
+
+body,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fira Sans', system-ui, Arial, sans-serif !important;
 }
