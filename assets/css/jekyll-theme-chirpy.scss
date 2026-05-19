@@ -29,12 +29,12 @@ html {
       --sidebar-btn-color:    #ffffff;
       --sidebar-hover-bg:     #9b5d00;
       --site-title-color:     #ffffff;
-      --site-subtitle-color:  #ffffff;
+      --site-subtitle-color:  #e6e6e6;
       --topbar-bg:            #000000;
       --topbar-text-color:    #ffffff;
       --main-bg:              #000000;
       --body-bg:              #000000;
-      --text-color:           #ffffff;
+      --text-color:           #e6e6e6;
       --text-muted-color:     #dbdbdb;
       --heading-color:        #ffffff;
       --link-color:           #ff9900;
@@ -44,6 +44,9 @@ html {
       --card-hover-bg:        #2e281f;
       --post-list-text-color: #ffffff;
       --avatar-border-color:  #9b5d00;
+      --tag-hover:            #131826;
+      --footnote-target-bg:   #143666;
+      --toc-highlight:        #ff9900;
     }
 
     /* User clicked light toggle while system is dark */
@@ -54,12 +57,12 @@ html {
       --sidebar-btn-color:    #000000;
       --sidebar-hover-bg:     #ffe3ba;
       --site-title-color:     #000000;
-      --site-subtitle-color:  #000000;
+      --site-subtitle-color:  #1a1a1a;
       --topbar-bg:            #ffffff;
       --topbar-text-color:    #000000;
       --main-bg:              #ffffff;
       --body-bg:              #ffffff;
-      --text-color:           #000000;
+      --text-color:           #1a1a1a;
       --text-muted-color:     #696969;
       --heading-color:        #000000;
       --link-color:           #e65100;
@@ -69,6 +72,9 @@ html {
       --card-hover-bg:        #d9e4f2;
       --post-list-text-color: #212121;
       --avatar-border-color:  #9b5d00;
+      --tag-hover:            #dae1f5;
+      --footnote-target-bg:   #d9e9ff;
+      --toc-highlight:        #e65100;
     }
 
   }
