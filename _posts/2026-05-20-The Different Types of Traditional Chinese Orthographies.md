@@ -10,7 +10,7 @@ Do you know that there are multiple writing forms of traditional Chinese charact
 
 This summary is basically a quick translation of a Chinese article[^1] explaining the different types of Chinese forms, so credit where it’s due. However, there is one additional category not mentioned there, which I will explain below.
 
-# What are the different orthographies?
+## What are the different orthographies?
 
 1. **Old forms** (otherwise known as the **Kangxi Dictionary forms** (康熙字典), **Jiu Zixing** (舊字形) as called in Mainland China or **Inherited Glyphs** (傳承字形)), and is analogous to **Japanese Kyūjitai** and **Korean Hanja** forms. It’s also called **traditional print forms**, or **classic forms**. It has largely been the default forms for all of Greater China throughout the 20th century from metal type to phototypesetting.
 2. **Semi-modern (or amalgam) forms**, which is popularised by DynaComware and Arphic, and are partially analogous to **Japanese Shinjitai** forms. There is no unified standard for this, so typeface designers are free to pick which radicals and components will retain the Kangxi forms and which ones will use the modern forms. It is a compromise that has the basic elements of old traditional print forms (e.g. 糹, 言, 辶) while having some components resemble handwriting forms (e.g. 爫, 肖, 尚, 俞), so they would not be too uncomfortable for people to look at.
@@ -27,7 +27,7 @@ This summary is basically a quick translation of a Chinese article[^1] explainin
 
 Examples of these type of forms are given to ensure a better understanding.
 
-## Old forms
+### Old forms
 - The old version of MingLiU (細明體)\*\*, as seen in the Traditional Chinese version of Windows 98.
 - The early version of Heiti TC (黑體-繁, included in Mac OS X 10.6.0 to 10.6.2)\*\*, designed by Changzhou SinoType (常州华文).
 - GenYoGothic and GenYoMincho (源樣黑體/源樣明體)
@@ -42,7 +42,7 @@ Examples of these type of forms are given to ensure a better understanding.
 
 In the case of old forms, the same Unicode codepoints are used to demonstrate most fonts mapping to a glyph that should be in another codepoint, due to Source Separation Rule (e.g. U+70BA 為 vs U+7232 爲). This can be a point of contention as on one hand, modern forms must be used if glyph shapes must be differentiated for technical or academic reasons, and on the other hand, it breaks component consistency since the modern and basic Chinese character sets may not allow for alternate codepoints very easily. In addition, Chinese input methods will always point to the common form first.
 
-## Amalgam forms
+### Amalgam forms
 - Founder’s Lantinghei TC (蘭亭黑-繁)\*\*, bundled with macOS since 10.8 Mountain Lion.
 	- However, this is the old version, as the latest commercial version on the official website follows educational forms. The old version remains current as of macOS Tahoe.
 	- Only characters within Big5 follow amalgam forms. HKSCS still follow Xin Zixing forms.
@@ -60,7 +60,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 
 ![Examples of Amalgam forms](/assets/img/posts/tc_2_amalgam.png){: width="400" height="200" .normal }
 
-## Modern forms (split strokes)
+### Modern forms (split strokes)
 - Apple LiGothic (蘋果儷中黑)\*\* and Apple LiSung (蘋果儷細宋)\*\* by DynaComware.
 - LiHei Pro (儷黑Pro)\*\* and LiSong Pro (儷宋Pro)\*\* by DynaComware.
 - The finalised version of Heiti TC (黑體-繁)\*\* by Changzhou SinoType.
@@ -69,7 +69,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 
 ![Examples of Modern forms (split strokes)](/assets/img/posts/tc_3a_modern_split.png){: width="400" height="200" .normal }
 
-## Modern forms (no split strokes)
+### Modern forms (no split strokes)
 - MHei HK\* by Monotype HK.
 	- Except for the heaviest weight Xbold which falls under hybrid forms due to a good amount of the components being close to old forms, explained below, while the lightest weight Light has split strokes.
 - MSung HK\* by Monotype HK.
@@ -80,7 +80,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 
 ![Examples of Modern forms (no split strokes)](/assets/img/posts/tc_3b_modern_nosplit.png){: width="400" height="200" .normal }
 
-## Educational forms
+### Educational forms
 - Microsoft JhengHei\*\*
 - The current version of MingLiU\*\* since Windows Vista.
 - Source Han Sans/Serif TC (Taiwan) and HC (Hong Kong) by Adobe and Google, with font designers Changzhou Sinotype and more recently Arphic.
@@ -90,7 +90,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 
 ![Examples of Educational forms](/assets/img/posts/tc_4_edu.png){: width="400" height="200" .normal }
 
-## Traditional-handwritten hybrid forms
+### Traditional-handwritten hybrid forms
 - Morisawa A1 Gothic Traditional Chinese\*; most components fall under semi-modern amalgam forms, except the 厶 and 糹  components follow modern handwritten forms.
 - Typotheque TPTQ Sans/Serif CJK Traditional Chinese\*; most components fall under modern forms (no split strokes), except the 言, 辶 and 隹 components follow Kangxi forms.
 - justfont Cream Font (凝書體)\*; some elements adopt Taiwan forms (but not the 肉月 radical), while others follow Kangxi forms (for example, 糹 and 辶 radicals). The font website even states that it blends Kaiti elements with Mingti. However, the Japanese version fully complies with Japanese orthography, which leans closer to traditional printed forms.
@@ -102,7 +102,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 \* Paid commercial typeface\
 \** Commercial typeface bundled with an operating system (like Mac/Windows)
 
-# Closing words
+## Closing words
 
 On Chinese-language social media, especially in the 2010s, there has been a lot of debate on which orthography is better. I will not go into detail, but in general, some people wholly prefer educational forms because they think it’s the correct forms as taught in school, and that the traditional orthography forms are considered incorrect, outdated or Japanese. One even said it was “humanist”. On the other hand, some people prefer traditional forms because it’s more aesthetically pleasing in terms of structure, composition and the sense of symmetry, and handwritten forms (especially the Taiwan Educational standard) ruin these qualities[^2].
 
@@ -112,11 +112,11 @@ With that, I will explain why one of the popular operating systems had never eve
 
 I will also cover what I know about Japanese character sets despite my limited knowledge in a future post.
 
-# Legal disclaimer
+## Legal disclaimer
 
 Some of the commercial typefaces displayed in the pictures are copyrighted. They are only used to demonstrate the glyph orthographies and therefore fall under fair use. Any other use requires a commercial licence.
 
-# References
+## References
 
 [^1]: [繁體中文常見的黑體字型 - JT Foundry](https://medium.com/@jtfoundry/繁體中文常見的黑體字型-43433ae68f7f)
 [^2]: [請還原Traditional Chinese的眞正Tradition寫法 - Source Han Sans GitHub Issues](https://github.com/adobe-fonts/source-han-sans/issues/6)
