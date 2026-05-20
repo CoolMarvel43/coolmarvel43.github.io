@@ -23,19 +23,21 @@ This summary is basically a quick translation of a Chinese article[^1] explainin
 	- For Hong Kong, it is the **List of Graphemes of Commonly-used Chinese Characters** (常用字字表) and the **Guidelines on Character Glyphs for Chinese Computer Systems** (香港電腦漢字字形參考指引).
 	- I am not fully educated about what Macao uses, but they largely follow HK forms with some exceptions, like 啟 following the TW form.
 	- For Japan, the equivalent is **Kyōkasho forms** (教科書), but in commercial fonts, these only apply to Jōyō kanji.
-5. **Traditional-Handwritten Hybrid forms** - This is a recent observation that is not mentioned in the original article. Some components or radicals follow Kangxi Dictionary forms and/or Shinjitai-like forms while other components (especially when you expect them to follow traditional forms) follow handwritten forms. I would call it 傳統印刷楷化混合字形 in Chinese.
+5. **Traditional-handwritten hybrid forms** - This is a recent observation that is not mentioned in the original article. Some components or radicals follow Kangxi Dictionary forms and/or Shinjitai-like forms while other components (especially when you expect them to follow traditional forms) follow handwritten forms. I would call it 傳統印刷楷化混合字形 in Chinese.
 
 Examples of these type of forms are given to ensure a better understanding.
 
 ### Old forms
 - The old version of MingLiU (細明體)\*\*, as seen in the Traditional Chinese version of Windows 98.
+  - The Windows XP version did change some forms, for example, the left 飠 radical to modern TW forms, with the split stroke 𠄌 not being too prominent. Otherwise it is still mostly old forms.
 - The early version of Heiti TC (黑體-繁, included in Mac OS X 10.6.0 to 10.6.2)\*\*, designed by Changzhou SinoType (常州华文).
 - GenYoGothic and GenYoMincho (源樣黑體/源樣明體)
 	- Originally based on the Korean version of Source Han Sans/Serif respectively, with some deviations from the Korean standard based on research and practicality.
 	- Since the v2 release, only the TC version (called 丹) applies, and is also called by GenKiGothic and GenKiMincho (源起黑體/源起明體) with attempts to reduce the Xin Zixing elements from folding strokes where CN/TW/HK glyphs are used, via filters.
 - Shanggu Sans/Serif (尙古黑體/尙古明體)
-	- Honourable mention: Chiukong Gothic CL where Shanggu took some of its variant glyphs.
-- LXGW XiHei/ZhiSong CL, based on IPAexGothic and IPAexMincho/IPAmjMincho by TypeBank respectively.
+	- Honourable mention: Chiukong Gothic CL (秋空黑體) where Shanggu took some of its variant glyphs.
+- LXGW XiHei/ZhiSong CL (霞鶩晰黑/霞鶩緻宋 CL), based on IPAexGothic and IPAexMincho/IPAmjMincho by TypeBank respectively.
+- i.Ming (一點明體), also based on IPAexMincho/IPAmjMincho, expanded to cover most of Traditional Chinese (up to [Suppchara](https://github.com/ichitenfont/suppchara), i.Ming's character list for HK use, not the entire HKSCS character set) and the glyphs modified to be the basis of a standard based on historical Chinese character etymologies rather than on 20th century orthographies. Also a honourable mention here, because this is the first TC font based on IPAmjMincho before LXGW ZhiSong CL.
 - Huiwen-HKHei (匯文港黑), based on phototype negative scans of a Heiti font used in Hong Kong in the 1980s-1990s. Original source is claimed to be Iwata Gothic from Japan.
 
 ![Examples of Old forms](/assets/img/posts/tc_1_old.png){: width="400" height="200" .normal }
@@ -56,7 +58,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - IBM Plex Sans TC
 - GenYoGothic and GenYoMincho (源樣黑體/源樣明體) v2, TW version (called 月).
 	- To achieve the amalgam look quickly, a lot of CN/TW/HK glyphs are used directly, with attempts to reduce the Xin Zixing elements from folding strokes where such glyphs are used, via filters (as mentioned earlier).
-- LXGW XiHei/ZhiSong MN
+- LXGW XiHei/ZhiSong MN (霞鶩晰黑/霞鶩緻宋 MN)
 
 ![Examples of Amalgam forms](/assets/img/posts/tc_2_amalgam.png){: width="400" height="200" .normal }
 
@@ -65,7 +67,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - LiHei Pro (儷黑Pro)\*\* and LiSong Pro (儷宋Pro)\*\* by DynaComware.
 - The finalised version of Heiti TC (黑體-繁)\*\* by Changzhou SinoType.
 - Songti TC (宋體-繁)\*\* by Changzhou Sinotype.
-- justfont Jinxuan (jf 金萱)\*, except for the 辶 radical which follows old forms, and I wasn't completely sure if this should fall under the Traditional-Handwritten Hybrid forms category.
+- justfont Jinxuan (jf 金萱)\*, except for the 辶 radical which follows old forms, and I wasn't completely sure if this should fall under the Traditional-handwritten hybrid forms category.
 
 ![Examples of Modern forms (split strokes)](/assets/img/posts/tc_3a_modern_split.png){: width="400" height="200" .normal }
 
@@ -75,18 +77,19 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - MSung HK\* by Monotype HK.
 - XiangHe Hei TC (翔鶴黑體)\* by Monotype.
 - Chiron Hei/Sung HK (昭源黑體/昭源宋體), based on Source Han Sans/Serif respectively.
-- AR UD JingXiHei (文鼎UD晶熙黑體)\*; while some forms resemble those used in Mainland China, some components like 骨 do not follow the PRC standard.
+- AR UD JingXiHei (文鼎UD晶熙黑體)\*; while some forms, like the 辶 radical, resemble those used in Mainland China, some components like 骨 do not follow the PRC standard.
 - AR ShuYuanSong (文鼎書苑宋)\*; ditto.
 
 ![Examples of Modern forms (no split strokes)](/assets/img/posts/tc_3b_modern_nosplit.png){: width="400" height="200" .normal }
 
 ### Educational forms
-- Microsoft JhengHei\*\*
+- Microsoft JhengHei (微軟正黑體)\*\*
 - The current version of MingLiU\*\* since Windows Vista.
-- Source Han Sans/Serif TC (Taiwan) and HC (Hong Kong) by Adobe and Google, with font designers Changzhou Sinotype and more recently Arphic.
+- Source Han Sans/Serif TC (Taiwan) and HC (Hong Kong) by Adobe and Google, with font designers Changzhou SinoType and more recently Arphic.
 - Pingfang TC/HK/MO (蘋方-台/蘋方-港/蘋方-澳)\*\*, based on King Gothic (華康金剛黑)\* by DynaComware. MO is not listed in the example picture since they largely follow HK with very few exceptions.
-- Hiragino Sans CNS (although not strictly)\*\* since macOS Big Sur, designed by SCREEN (a Japanese company).
-- LINE Seed TW (although not fully because there is a press stroke 乀 instead of what’s supposed to be the dot stroke 丶 in components like 八, 六, 貝, 大, 吳, 美, due to inheriting the design choice from LINE Seed JP, and the meat 肉月 radical is not Taiwan MOE style).
+- Hiragino Sans TC (formerly Hiragino Sans CNS, although not strictly)\*\* since macOS Big Sur, designed by SCREEN (a Japanese company).
+- LINE Seed TW, originally designed by Fontworks (at least for the ideographs, as LINE Seed JP), then extended to Traditional Chinese by DynaComware, and modified into mostly educational forms.
+  - However, it is not fully educational forms, because there is a press stroke 乀 instead of what’s supposed to be the dot stroke 丶 in components like 八, 六, 貝, 大, 吳, 美, due to inheriting the design choice from LINE Seed JP, and the meat 肉月 radical is not Taiwan MOE style.
 
 ![Examples of Educational forms](/assets/img/posts/tc_4_edu.png){: width="400" height="200" .normal }
 
@@ -95,7 +98,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - Typotheque TPTQ Sans/Serif CJK Traditional Chinese\*; most components fall under modern forms (no split strokes), except the 言, 辶 and 隹 components follow Kangxi forms.
 - justfont Cream Font (凝書體)\*; some elements adopt Taiwan forms (but not the 肉月 radical), while others follow Kangxi forms (for example, 糹 and 辶 radicals). The font website even states that it blends Kaiti elements with Mingti. However, the Japanese version fully complies with Japanese orthography, which leans closer to traditional printed forms.
 - MHei HK XBold\*; An older example, with idiosyncratic features like half of the components belonging to old forms while other components like 令, 言 and 亠 have handwritten forms. Even the simplified PRC version has elements of old forms as seen in the 纟 radical.
-- Huayuan Gothic (樺源黑體) - The only free and open source font I can find that is of this format, based on Source Han Sans and Chiron Hei HK.
+- Huayuan Gothic (樺源黑體) - The only free and open source font I can find that is of this format, based on Source Han Sans and Chiron Hei HK. No longer maintained since 2022.
 
 ![Examples of Traditional-handwritten hybrid forms](/assets/img/posts/tc_5_hybrid.png){: width="400" height="200" .normal }
 
