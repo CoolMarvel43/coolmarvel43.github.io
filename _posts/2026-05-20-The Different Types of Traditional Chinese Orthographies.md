@@ -54,7 +54,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - [Adobe Fan Heiti Std B](https://fonts.adobe.com/fonts/adobe-fan-heiti)\*, based off [AR Hei (文鼎黑體)](https://ifontcloud.com/index/font_intro.jsp?family_font_id=1361586047937) from Arphic.
 	- Some components do lean towards old forms, although there are some changes from the original 文鼎黑體, like the 示 radical turning into 礻, and the first stroke of 音 changed from the original horizontal stroke (which is closer to Inherited Glyphs form) to a vertical stroke for the Adobe version.
 - [Adobe Ming Std L](https://fonts.adobe.com/fonts/adobe-ming)\*, based off [AR Ming (文鼎明體)](https://ifontcloud.com/index/font_intro.jsp?family_font_id=1359533768891) from Arphic.
-- [Open-Huninn (jf open 粉圓)](https://github.com/justfont/open-huninn-font) by justfont, based on a Japanese font called [Kosugi Maru]() by Motoya.
+- [Open-Huninn (jf open 粉圓)](https://github.com/justfont/open-huninn-font) by justfont, based on a Japanese font called [Kosugi Maru](https://fonts.google.com/specimen/Kosugi+Maru) by Motoya.
 	- A good amount of components like 真(眞), 直, 飠(𩙿) and 令 lean towards old forms, while the 戶 component (except for the base character) is designed as 戸, likely due to a stylistic choice influenced by Japan.
 - [IBM Plex Sans TC](https://github.com/IBM/plex)
 - GenYoGothic and GenYoMincho (源樣黑體/源樣明體) v2, TW version (called 月).
