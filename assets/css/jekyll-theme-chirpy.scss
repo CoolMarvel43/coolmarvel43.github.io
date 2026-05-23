@@ -159,6 +159,28 @@ h1, h2, h3, h4, h5, h6,
     color: #e65100 !important;
   }
 
+  /* OLDER/NEWER label colour */
+  html:not([data-mode]) .post-navigation .btn.btn-outline-primary::before,
+  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary::before {
+    color: #ffffff !important;
+  }
+
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary::before {
+    color: #000000 !important;
+  }
+
+  /* Also on hover */
+  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before,
+  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before {
+    color: #ffffff !important;
+  }
+
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before,
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus::before,
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):active::before {
+    color: #000000 !important;
+  }
+
   /* Hover/focus/active state */
   html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
   html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
