@@ -35,7 +35,7 @@ html {
       --main-bg:              #000000;
       --body-bg:              #000000;
       --text-color:           #e6e6e6;
-      --text-muted-color:     #dbdbdb;
+      --text-muted-color:     #999999;
       --heading-color:        #ffffff;
       --link-color:           #ff9900;
       --link-underline-color: #ff9900;
@@ -44,6 +44,7 @@ html {
       --card-hover-bg:        #2e281f;
       --post-list-text-color: #ffffff;
       --avatar-border-color:  #9b5d00;
+      --tag-border:           #3b4f58;
       --tag-hover:            #131826;
       --footnote-target-bg:   #143666;
       --toc-highlight:        #ff9900;
@@ -51,7 +52,7 @@ html {
 
     /* User clicked light toggle while system is dark */
     &[data-mode='light'] {
-      --sidebar-bg:           #d9ecff;
+      --sidebar-bg:           #e6ecff;
       --sidebar-active-color: #e65100;
       --sidebar-muted-color:  #000000;
       --sidebar-btn-color:    #000000;
@@ -63,7 +64,7 @@ html {
       --main-bg:              #ffffff;
       --body-bg:              #ffffff;
       --text-color:           #1a1a1a;
-      --text-muted-color:     #696969;
+      --text-muted-color:     #666666;
       --heading-color:        #000000;
       --link-color:           #e65100;
       --link-underline-color: #e65100;
@@ -72,6 +73,7 @@ html {
       --card-hover-bg:        #d9e4f2;
       --post-list-text-color: #212121;
       --avatar-border-color:  #9b5d00;
+      --tag-border:           #dee2e6;
       --tag-hover:            #dae1f5;
       --footnote-target-bg:   #d9e9ff;
       --toc-highlight:        #e65100;
@@ -118,11 +120,131 @@ html {
    ===================================================== */
 
 body,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.post-desc,
+.label,
+.text-truncate
+ {
   font-family: 'Fira Sans', system-ui, Arial, sans-serif !important;
 }
 
-.post-desc {
-  font-family: 'Fira Sans', system-ui, Arial, sans-serif !important;
-  color: #cccccc !important;
+/* Post description colours for light and dark mode */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) .post-desc,
+  html[data-mode='dark'] .post-desc {
+    color: #cccccc !important;
+  }
+
+  html[data-mode='light'] .post-desc {
+    color: #333333 !important;
+  }
+}
+
+/* =====================================================
+   POST NAVIGATION BUTTONS — kill Bootstrap blue hover
+   ===================================================== */
+@media (prefers-color-scheme: dark) {
+
+  /* Normal state */
+  html:not([data-mode]) .post-navigation .btn.btn-outline-primary,
+  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary {
+    background-color: #000000 !important;
+    border-color: #444444 !important;
+    color: #ff9900 !important;
+  }
+
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary {
+    background-color: #ffffff !important;
+    border-color: #cccccc !important;
+    color: #e65100 !important;
+  }
+
+  /* Hover/focus/active state */
+  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
+  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
+  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):active,
+  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
+  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
+  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):active {
+    background-color: #9b5d00 !important;
+    border-color: #9b5d00 !important;
+    color: #ffffff !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
+  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):active {
+    background-color: #FFC164 !important;
+    border-color: #FFC164 !important;
+    color: #000000 !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+}
+
+/* =====================================================
+   TAGS — sidebar and post tags
+   ===================================================== */
+@media (prefers-color-scheme: dark) {
+
+  /* Normal state */
+  html:not([data-mode]) .post-tag,
+  html[data-mode='dark'] .post-tag {
+    background-color: #000000 !important;
+    border-color: #444444 !important;
+    color: #ff9900 !important;
+  }
+
+  html[data-mode='light'] .post-tag {
+    background-color: #ffffff !important;
+    border-color: #cccccc !important;
+    color: #555555 !important;
+  }
+
+  /* Hover/focus/active state — same pattern that worked for post nav */
+  html:not([data-mode]) .post-tag.btn.btn-outline-primary:not(.disabled):hover,
+  html:not([data-mode]) .post-tag.btn.btn-outline-primary:not(.disabled):focus,
+  html:not([data-mode]) .post-tag.btn.btn-outline-primary:not(.disabled):active,
+  html[data-mode='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
+  html[data-mode='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
+  html[data-mode='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):active {
+    background-color: #131826 !important;
+    border-color: #3b4f58 !important;
+    color: #ffffff !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Fallback for post tags without Bootstrap classes */
+  html:not([data-mode]) .post-tag:hover,
+  html[data-mode='dark'] .post-tag:hover {
+    background-color: #131826 !important;
+    border-color: #3b4f58 !important;
+    color: #ffffff !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  html[data-mode='light'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
+  html[data-mode='light'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
+  html[data-mode='light'] .post-tag.btn.btn-outline-primary:not(.disabled):active {
+    background-color: #dae1f5 !important;
+    border-color: #dee2e6 !important;
+    color: #000000 !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Fallback for light mode post tags without Bootstrap classes */
+  html[data-mode='light'] .post-tag:hover {
+    background-color: #dae1f5 !important;
+    border-color: #dee2e6 !important;
+    color: #000000 !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
 }
