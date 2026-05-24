@@ -1,9 +1,9 @@
 main {
   /* Backgrounds — off-white, not pure white */
-  --color-canvas-default: #f5f5f5;
-  --color-canvas-overlay: #eeeeee;
-  --color-canvas-inset: #e8e8e8;
-  --color-canvas-subtle: #f0f0f0;
+  --color-canvas-default: #f2f2f2; /* main background */
+  --color-canvas-overlay: #eaeaea; /* controls comment card background */
+  --color-canvas-inset: #ffffff; /* textarea/inset background, make it white so it stands out */
+  --color-canvas-subtle: #ebebeb; /* subtle strips inside comments */
 
   /* Text — dark grey, not pure black */
   --color-fg-default: #1a1a1a;
@@ -17,9 +17,9 @@ main {
 
   /* Buttons — greyscale default, orange primary */
   --color-btn-text: #1a1a1a;
-  --color-btn-bg: #eeeeee;
+  --color-btn-bg: #eeeeee; /* button background (non-primary) */
   --color-btn-border: #cccccc;
-  --color-btn-hover-bg: #e0e0e0;
+  --color-btn-hover-bg: #e0e0e0; /* button hover */
   --color-btn-hover-border: #aaaaaa;
   --color-btn-active-bg: #d5d5d5;
   --color-btn-active-border: #aaaaaa;
@@ -27,9 +27,9 @@ main {
 
   /* Primary button — orange */
   --color-btn-primary-text: #ffffff;
-  --color-btn-primary-bg: #e65100;
+  --color-btn-primary-bg: #f04800;
   --color-btn-primary-border: #bf4000;
-  --color-btn-primary-hover-bg: #cc4700;
+  --color-btn-primary-hover-bg: #d93f00;
   --color-btn-primary-hover-border: #bf4000;
   --color-btn-primary-selected-bg: #bf4000;
   --color-btn-primary-disabled-text: rgb(255 255 255 / 60%);

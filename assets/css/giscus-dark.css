@@ -1,9 +1,9 @@
 main {
   /* Backgrounds — dark grey, not black */
-  --color-canvas-default: #1a1a1a;
-  --color-canvas-overlay: #222222;
-  --color-canvas-inset: #111111;
-  --color-canvas-subtle: #202020;
+  --color-canvas-default: #1a1a1a; /* main background */
+  --color-canvas-overlay: #252525; /* controls comment card background */
+  --color-canvas-inset: #181818; /* too dark for inset areas like textarea */
+  --color-canvas-subtle: #232323; /* controls subtle areas like header strip inside comment */
 
   /* Text */
   --color-fg-default: #e0e0e0;
@@ -17,9 +17,9 @@ main {
 
   /* Buttons — greyscale default, orange primary */
   --color-btn-text: #e0e0e0;
-  --color-btn-bg: #2a2a2a;
+  --color-btn-bg: #303030; /* button background (non-primary) */
   --color-btn-border: #444444;
-  --color-btn-hover-bg: #333333;
+  --color-btn-hover-bg: #3a3a3a; /* button hover */
   --color-btn-hover-border: #555555;
   --color-btn-active-bg: #222222;
   --color-btn-active-border: #444444;
