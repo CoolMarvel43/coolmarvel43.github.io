@@ -1,119 +1,74 @@
-/* Matches --main-bg, --body-bg */
-.gsc-main, .gsc-timeline, .gsc-header {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  font-family: 'Fira Sans', system-ui, Arial, sans-serif;
+main {
+  /* Backgrounds — off-white, not pure white */
+  --color-canvas-default: #f5f5f5;
+  --color-canvas-overlay: #eeeeee;
+  --color-canvas-inset: #e8e8e8;
+  --color-canvas-subtle: #f0f0f0;
+
+  /* Text — dark grey, not pure black */
+  --color-fg-default: #1a1a1a;
+  --color-fg-muted: #666666;
+  --color-fg-subtle: #888888;
+
+  /* Borders */
+  --color-border-default: #cccccc;
+  --color-border-muted: #dddddd;
+  --color-neutral-muted: rgb(0 0 0 / 10%);
+
+  /* Buttons — greyscale default, orange primary */
+  --color-btn-text: #1a1a1a;
+  --color-btn-bg: #eeeeee;
+  --color-btn-border: #cccccc;
+  --color-btn-hover-bg: #e0e0e0;
+  --color-btn-hover-border: #aaaaaa;
+  --color-btn-active-bg: #d5d5d5;
+  --color-btn-active-border: #aaaaaa;
+  --color-btn-selected-bg: #e8e8e8;
+
+  /* Primary button — orange */
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #e65100;
+  --color-btn-primary-border: #bf4000;
+  --color-btn-primary-hover-bg: #cc4700;
+  --color-btn-primary-hover-border: #bf4000;
+  --color-btn-primary-selected-bg: #bf4000;
+  --color-btn-primary-disabled-text: rgb(255 255 255 / 60%);
+  --color-btn-primary-disabled-bg: rgb(230 81 0 / 50%);
+  --color-btn-primary-disabled-border: rgb(230 81 0 / 30%);
+
+  /* Accent — orange */
+  --color-accent-fg: #e65100;
+  --color-accent-emphasis: #bf4000;
+  --color-accent-muted: rgb(230 81 0 / 20%);
+  --color-accent-subtle: rgb(230 81 0 / 10%);
+
+  /* Segmented control (Oldest/Newest toggle) */
+  --color-segmented-control-bg: rgb(0 0 0 / 5%);
+  --color-segmented-control-button-bg: #f5f5f5;
+  --color-segmented-control-button-selected-border: #aaaaaa;
+
+  /* Reactions hover */
+  --color-social-reaction-bg-hover: #e0e0e0;
+  --color-social-reaction-bg-reacted-hover: #ffe3ba;
+
+  /* Action list hover */
+  --color-action-list-item-default-hover-bg: rgb(0 0 0 / 5%);
+
+  /* Syntax highlighting */
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #8250df;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
 }
 
-/* Comment box */
-.gsc-comment-box {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-}
-
-.gsc-comment-box-textarea {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border-color: #dee2e6;
-}
-
-.gsc-comment-box-textarea:focus {
-  border-color: #e65100;
-}
-
-/* Comments */
-.gsc-comment {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-}
-
-.gsc-comment-header {
-  background-color: #ffffff;
-  color: #1a1a1a;
-}
-
-.gsc-comment-content {
-  background-color: #ffffff;
-  color: #1a1a1a;
-}
-
-/* Replies */
-.gsc-replies {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-}
-
-.gsc-reply {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-  color: #1a1a1a;
-}
-
-/* Links */
-a {
-  color: #e65100;
-}
-
-a:hover {
-  color: #e65100;
-  text-decoration: underline;
-}
-
-/* Buttons */
-.btn {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-  color: #1a1a1a;
-}
-
-.btn:hover {
-  background-color: #ffe3ba;
-  border-color: #9b5d00;
-  color: #000000;
-}
-
-.btn-primary {
-  background-color: #e65100;
-  border-color: #e65100;
-  color: #ffffff;
-}
-
-.btn-primary:hover {
-  background-color: #9b5d00;
-  border-color: #9b5d00;
-  color: #ffffff;
-}
-
-/* Muted text */
-.color-fg-muted, .text-muted {
-  color: #666666 !important;
-}
-
-/* Reactions */
-.gsc-reactions-button {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-  color: #1a1a1a;
-}
-
-.gsc-reactions-button:hover {
-  background-color: #ffe3ba;
-  border-color: #9b5d00;
-}
-
-/* Loading spinner */
-.gsc-loading {
-  color: #666666;
-}
-
-/* Pagination */
-.gsc-pagination-button {
-  background-color: #ffffff;
-  border-color: #dee2e6;
-  color: #1a1a1a;
-}
-
-.gsc-pagination-button:hover {
-  background-color: #ffe3ba;
-  color: #000000;
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
