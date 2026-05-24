@@ -1,9 +1,9 @@
 main {
   /* Backgrounds — off-white, not pure white */
-  --color-canvas-default: #fcfcfc; /* main background */
-  --color-canvas-overlay: #fcfcfc; /* controls comment card background */
-  --color-canvas-inset: #f9f9f9; /* textarea/inset background, make it white so it stands out */
-  --color-canvas-subtle: #f6f6f6; /* subtle strips inside comments */
+  --color-canvas-default: #fcfcfc; /* entire widget background */
+  --color-canvas-overlay: #fcfcfc; /* comment card background */
+  --color-canvas-inset: #f9f9f9; /* textarea and reply box */
+  --color-canvas-subtle: #f6f6f6; /* header strip inside comment cards, tab bar */
 
   /* Text — dark grey, not pure black */
   --color-fg-default: #1a1a1a;
@@ -38,7 +38,7 @@ main {
 
   /* Accent — orange */
   --color-accent-fg: #e65100;
-  --color-accent-emphasis: #bf4000;
+  --color-accent-emphasis: #cccccc; /* Grey border now, forget the colour */
   --color-accent-muted: rgb(230 81 0 / 20%);
   --color-accent-subtle: rgb(230 81 0 / 10%);
 
