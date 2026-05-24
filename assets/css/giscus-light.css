@@ -3,7 +3,7 @@ main {
   --color-canvas-default: #ffffff; /* main background */
   --color-canvas-overlay: #ffffff; /* controls comment card background */
   --color-canvas-inset: #ffffff; /* textarea/inset background, make it white so it stands out */
-  --color-canvas-subtle: #f2f2f2; /* subtle strips inside comments */
+  --color-canvas-subtle: #ffffff; /* subtle strips inside comments */
 
   /* Text — dark grey, not pure black */
   --color-fg-default: #1a1a1a;
