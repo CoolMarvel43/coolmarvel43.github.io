@@ -1,7 +1,7 @@
 main {
   /* Backgrounds — dark grey, not black */
   --color-canvas-default: #161616; /* main background */
-  --color-canvas-overlay: #1e1e1e; /* controls comment card background */
+  --color-canvas-overlay: #141414; /* controls comment card background */
   --color-canvas-inset: #141414; /* too dark for inset areas like textarea */
   --color-canvas-subtle: #1c1c1c; /* controls subtle areas like header strip inside comment */
 
