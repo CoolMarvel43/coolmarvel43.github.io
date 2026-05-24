@@ -1,8 +1,8 @@
 main {
   /* Backgrounds — off-white, not pure white */
-  --color-canvas-default: #ffffff; /* main background */
-  --color-canvas-overlay: #fafafa; /* controls comment card background */
-  --color-canvas-inset: #f1f1f1; /* textarea/inset background, make it white so it stands out */
+  --color-canvas-default: #fcfcfc; /* main background */
+  --color-canvas-overlay: #fcfcfc; /* controls comment card background */
+  --color-canvas-inset: #f9f9f9; /* textarea/inset background, make it white so it stands out */
   --color-canvas-subtle: #f6f6f6; /* subtle strips inside comments */
 
   /* Text — dark grey, not pure black */
