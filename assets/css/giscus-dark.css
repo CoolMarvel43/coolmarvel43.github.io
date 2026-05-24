@@ -39,8 +39,6 @@ main {
   /* Accent — was orange but now it's grey */
   --color-accent-fg: #ff9900;
   --color-accent-emphasis: #333333;
-  --color-accent-muted: #333333;
-  --color-accent-subtle: #333333;
 
   /* Segmented control (Oldest/Newest toggle) */
   --color-segmented-control-bg: rgb(255 255 255 / 5%);
