@@ -1,0 +1,119 @@
+/* Matches --main-bg, --body-bg */
+.gsc-main, .gsc-timeline, .gsc-header {
+  background-color: #000000;
+  color: #e6e6e6;
+  font-family: 'Fira Sans', system-ui, Arial, sans-serif;
+}
+
+/* Comment box */
+.gsc-comment-box {
+  background-color: #000000;
+  border-color: #3b4f58;
+}
+
+.gsc-comment-box-textarea {
+  background-color: #000000;
+  color: #e6e6e6;
+  border-color: #3b4f58;
+}
+
+.gsc-comment-box-textarea:focus {
+  border-color: #ff9900;
+}
+
+/* Comments */
+.gsc-comment {
+  background-color: #000000;
+  border-color: #3b4f58;
+}
+
+.gsc-comment-header {
+  background-color: #22201b;
+  color: #e6e6e6;
+}
+
+.gsc-comment-content {
+  background-color: #000000;
+  color: #e6e6e6;
+}
+
+/* Replies */
+.gsc-replies {
+  background-color: #000000;
+  border-color: #3b4f58;
+}
+
+.gsc-reply {
+  background-color: #000000;
+  border-color: #3b4f58;
+  color: #e6e6e6;
+}
+
+/* Links */
+a {
+  color: #ff9900;
+}
+
+a:hover {
+  color: #ff9900;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  background-color: #000000;
+  border-color: #3b4f58;
+  color: #e6e6e6;
+}
+
+.btn:hover {
+  background-color: #9b5d00;
+  border-color: #9b5d00;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #ff9900;
+  border-color: #ff9900;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #9b5d00;
+  border-color: #9b5d00;
+  color: #ffffff;
+}
+
+/* Muted text */
+.color-fg-muted, .text-muted {
+  color: #999999 !important;
+}
+
+/* Reactions */
+.gsc-reactions-button {
+  background-color: #000000;
+  border-color: #3b4f58;
+  color: #e6e6e6;
+}
+
+.gsc-reactions-button:hover {
+  background-color: #2e281f;
+  border-color: #9b5d00;
+}
+
+/* Loading spinner */
+.gsc-loading {
+  color: #999999;
+}
+
+/* Pagination */
+.gsc-pagination-button {
+  background-color: #000000;
+  border-color: #3b4f58;
+  color: #e6e6e6;
+}
+
+.gsc-pagination-button:hover {
+  background-color: #9b5d00;
+  color: #ffffff;
+}
