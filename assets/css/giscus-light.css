@@ -1,8 +1,8 @@
 main {
   /* Backgrounds — off-white, not pure white */
-  --color-canvas-default: #f2f2f2; /* main background */
-  --color-canvas-overlay: #ffffff; /* controls comment card background */
-  --color-canvas-inset: #ffffff; /* textarea/inset background, make it white so it stands out */
+  --color-canvas-default: #fafafa; /* main background */
+  --color-canvas-overlay: #fafafa; /* controls comment card background */
+  --color-canvas-inset: #fafafa; /* textarea/inset background, make it white so it stands out */
   --color-canvas-subtle: #ffffff; /* subtle strips inside comments */
 
   /* Text — dark grey, not pure black */
@@ -15,11 +15,11 @@ main {
   --color-border-muted: #dddddd;
   --color-neutral-muted: rgb(0 0 0 / 10%);
 
-  /* Buttons — greyscale default, orange primary */
+  /* Buttons — greyscale default (cancel), orange primary */
   --color-btn-text: #1a1a1a;
-  --color-btn-bg: #eeeeee; /* button background (non-primary) */
-  --color-btn-border: #cccccc;
-  --color-btn-hover-bg: #e0e0e0; /* button hover */
+  --color-btn-bg: #f0f0f0; /* button background (non-primary) */
+  --color-btn-border: #d5d5d5;
+  --color-btn-hover-bg: #e8e8e8; /* button hover */
   --color-btn-hover-border: #aaaaaa;
   --color-btn-active-bg: #d5d5d5;
   --color-btn-active-border: #aaaaaa;
@@ -44,7 +44,7 @@ main {
 
   /* Segmented control (Oldest/Newest toggle) */
   --color-segmented-control-bg: rgb(0 0 0 / 5%);
-  --color-segmented-control-button-bg: #f5f5f5;
+  --color-segmented-control-button-bg: #fafafa;
   --color-segmented-control-button-selected-border: #aaaaaa;
 
   /* Reactions hover */
