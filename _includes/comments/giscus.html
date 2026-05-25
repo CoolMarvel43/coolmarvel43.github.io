@@ -1,10 +1,19 @@
 <!-- https://giscus.app/ -->
 <script>
   (function () {
-    const themeMapper = Theme.getThemeMapper(
-      'https://coolmarvel43.github.io/assets/css/giscus-light.css',
-      'https://coolmarvel43.github.io/assets/css/giscus-dark.css'
-    );
+    const isIosSafari = /iP(hone|ad|od)/.test(navigator.userAgent) &&
+                        /WebKit/.test(navigator.userAgent) &&
+                        !/CriOS|FxiOS|OPiOS|mercury/.test(navigator.userAgent);
+
+    const isLocal = window.location.hostname === 'localhost' ||
+                    window.location.hostname === '127.0.0.1';
+
+    const themeMapper = (isLocal || isIosSafari)
+      ? Theme.getThemeMapper('light_high_contrast', 'dark_high_contrast')
+      : Theme.getThemeMapper(
+          'https://coolmarvel43.github.io/assets/css/giscus-light.css',
+          'https://coolmarvel43.github.io/assets/css/giscus-dark.css'
+        );
 
     const initTheme = themeMapper[Theme.visualState];
 
