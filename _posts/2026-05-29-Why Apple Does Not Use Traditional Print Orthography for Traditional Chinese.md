@@ -7,7 +7,7 @@ description: Opinion as to why Apple uses modern handwritten (Kaiti regular scri
 comments: true
 ---
 
-***Notice:** This article was originally written in May 2023, however, due to not being published for three years, some content has been updated and edited to reflect my latest views at this time of publishing in June 2026. Any reasoning behind whatever happened is based on my educated guesses and may not be completely true.*
+***Notice:** This article was originally written in May 2023, however, due to not being published for three years, some content has been updated and edited to reflect my latest views at this time of publishing in May 2026. Any reasoning behind whatever happened is based on my educated guesses and may not be completely true.*
 
 *This is published some time before WWDC26. While I do not expect any CJK typographical improvements from Apple, I think this will be good timing to explore Apple's history with CJK typefaces.*
 
