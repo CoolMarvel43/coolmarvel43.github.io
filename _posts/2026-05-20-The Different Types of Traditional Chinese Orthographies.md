@@ -2,7 +2,7 @@
 title: The Different Types of Traditional Chinese Orthographies
 date: 2026-05-20 00:33 +0800
 categories: [CJK-Typography, Classification]
-tags: [traditional-chinese, orthography, kangxi, taiwan, china, educational, inherited-glyphs, hong-kong, jiu-zi-xing, xin-zi-xing, modern-forms, amalgam-forms, hybrid-forms]
+tags: [traditional-chinese, orthography, kangxi, taiwan, china, educational-forms, inherited-glyphs, hong-kong, jiu-zi-xing, xin-zi-xing, modern-forms, amalgam-forms, hybrid-forms]
 description: Do you know that there are multiple writing forms of Traditional Chinese? This article breaks down the types and explains what they are.
 comments: true
 ---
