@@ -65,7 +65,7 @@ In the early Mac OS X era, Apple LiGothic was the user interface for the Traditi
 _Credit: [National Taiwan Ocean University](https://stu.ntou.edu.tw/p/404-1023-48907.php?Lang=zh-tw)_
 ![LiHei Pro font example](/assets/img/posts/apple-ui-font-1.png){: width="800" height="400" }
 
-In 2009, when Mac OS X 10.6 Snow Leopard was released, an early version of Heiti TC (黑體-繁, with two weights) replaced LiHei Pro (which had only one weight).[^6] This version followed closely to the old printing forms (although with some inconsistencies).[^7]
+In 2009, when Mac OS X 10.6 Snow Leopard was released, an early version of Heiti TC (黑體-繁, with two weights, designed by Changzhou SinoType) replaced LiHei Pro (which had only one weight).[^6] This version followed closely to the old printing forms (although with some inconsistencies).[^7]
 
 ![Mac OS X 10.6.0 Traditional Chinese](/assets/img/posts/apple-os10-6-0-tc.png){: width="800" height="400" }
 _Credit: [Meow Wang, mobile01 (黑體-繁，其實是個好字型)](https://www.mobile01.com/topicdetail.php?f=177&t=1214845) (Image scaled up for better clarity)_
@@ -78,7 +78,7 @@ By 10.6.3, the glyph shapes of Heiti TC were changed to modern forms (with split
 
 ### Late OS X Era
 
-In 2012, with the release of OS X 10.8 Mountain Lion, Apple included Lantinghei (蘭亭黑) as one of the additional bundled optional Chinese fonts. The TC version follows that of the semi-modern amalgam forms. There doesn’t seem to be any complaints though as it isn’t a UI font. Till this day, even on macOS 26 Tahoe, the glyph shapes have not changed.
+In 2012, with the release of OS X 10.8 Mountain Lion, Apple included Lantinghei (蘭亭黑, designed by Founder (方正)) as one of the additional bundled optional Chinese fonts. The TC version follows that of the semi-modern amalgam forms. There doesn’t seem to be any complaints though as it isn’t a UI font. Till this day, even on macOS 26 Tahoe, the glyph shapes have not changed.
 
 ![Lantinghei TC font example](/assets/img/posts/apple-lantinghei-tc.png){: width="800" height="400" }
 
@@ -87,7 +87,7 @@ Founder has since updated Lantinghei TC to follow the Taiwan education forms (it
 In 2015, with the release of OS X 10.11 El Capitan, Apple introduced a new system font to replace Heiti SC/TC, Pingfang (蘋方), also designed by DynaComware.
 
 ![OS X El Capitan’s homepage promoting Pingfang](/assets/img/posts/apple-el-capitan-chinese-promo.jpg){: width="800" height="400" }
-_OS X El Capitan’s homepage promoting Pingfang. Source: [Chinese Mac](https://chinesemac.org/pages/osx11.html)_
+_OS X El Capitan’s homepage promoting Pingfang. Ironically, on the English page, the 果 character appears to have been set in the Kozuka Gothic (or Source Han Sans) typeface, when the heaviest weight in the final version of Pingfang at that time is only Semibold, which is nothing like the heaviest weight seen in the picture on the right, but more like third from right. So it was misleading on what the then-upcoming font family would look like. Credit: [Chinese Mac](https://chinesemac.org/pages/osx11.html)_
 
 Pingfang TC follows Taiwan educational forms (despite the TC naming which is supposed to represent all regions that use Traditional Chinese, which can lead to confusion), whereas Pingfang HK follows the Hong Kong educational standard, which at least gives those users the more “correct” forms.
 
