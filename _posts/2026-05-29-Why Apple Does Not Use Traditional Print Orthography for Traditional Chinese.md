@@ -95,7 +95,7 @@ Pingfang TC follows Taiwan educational forms (despite the TC naming which is sup
 
 ## Also related: A sudden change in Hiragino Sans CNS glyph shapes
 
-In the development preview of Mac OS X Snow Leopard, there was an early unfinished version of Hiragino Sans CNS (now called Hiragino Sans TC), which is Hiragino Kaku Gothic meant for Traditional Chinese. The character set was complete, but the glyph shapes were not standardised. It was not included in the final version of 10.6, until macOS Sierra 10.12 officially included it, still in its unfinished form.
+In the development preview of Mac OS X Snow Leopard, there was an early unfinished version of Hiragino Sans CNS (now called Hiragino Sans TC), which is Hiragino Kaku Gothic (originally designed by Jiyukobo Ltd. and developed by SCREEN) meant for Traditional Chinese. The character set was complete, but the glyph shapes were not standardised. It was not included in the final version of 10.6, until macOS Sierra 10.12 officially included it, still in its unfinished form.
 
 By the looks of it, it was originally planned for the font to roughly adopt the semi-modern amalgam format, as evidenced by a mishmash of Japanese and Simplified Chinese glyphs. In addition, there were some customised glyphs in that orthography format that were not found in the original Japanese font (for which the maximum character set for macOS is Adobe-Japan1-5, and still is), although some of the radical designs weren't consistent, especially the 辶 and 糸 radicals. It seemed like SCREEN was planning to go for a one-dot 辶 radical (like the original JP version, although U+35FB 㗻 and U+48AD 䢭 is shown with two dots in the below picture) and a LiHei Pro-style 糸 radical, which would technically deviate from the semi-modern amalgam format and go into traditional-handwritten hybrid forms.
 
@@ -104,7 +104,7 @@ _The uniquely-designed semi-modern amalgam forms of the original Hiragino Sans C
 
 Peculiarly, after being first seen in the development preview version of Mac OS X Snow Leopard, development seemingly stopped for years, until in 2017, when the font was officially finalised,[^14] but the design direction had completely changed to those resembling Taiwan educational forms (although not fully compliant).
 
-It is unclear why SCREEN (the Hiragino font developer) had to change direction and who asked them to do it. But given the controversy with Heiti TC as mentioned earlier, it is likely that Apple told SCREEN to halt the development of Hiragino Sans CNS, and asked them to completely redesign the font to not resemble Japanese forms or old print forms. It took quite a while for them to do it.
+It is unclear why SCREEN had to change direction and who asked them to do it. But given the controversy with Heiti TC as mentioned earlier, it is likely that Apple told SCREEN to halt the development of Hiragino Sans CNS, and asked them to completely redesign the font to not resemble Japanese forms or old print forms. It took quite a while for them to do it.
 
 It was only until macOS 11 Big Sur, in 2020, that Apple finally updated the font. It ended the inconsistency of mixed traditional-handwritten orthography, but it also meant the loss of what could have been: a (somewhat) traditional printing form of Hiragino Sans for Traditional Chinese.
 
