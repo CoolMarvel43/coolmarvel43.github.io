@@ -46,7 +46,7 @@ Examples of these type of forms are given to ensure a better understanding.
 In the case of old forms, the same Unicode codepoints are used to demonstrate most fonts mapping to a glyph that should be in another codepoint, due to Source Separation Rule (e.g. U+70BA 為 vs U+7232 爲). This can be a point of contention as on one hand, modern forms must be used if glyph shapes must be differentiated for technical or academic reasons, and on the other hand, it breaks component consistency since the modern and basic Chinese character sets may not allow for alternate codepoints very easily. In addition, Chinese input methods will always point to the common form first.
 
 ### Amalgam forms
-- Founder’s Lantinghei TC (蘭亭黑-繁)\*\*, bundled with macOS since 10.8 Mountain Lion.
+- FounderType Lantinghei TC (蘭亭黑-繁)\*\*, bundled with macOS since 10.8 Mountain Lion.
 	- However, this is the old version, as the latest commercial version on the official website follows educational forms. The old version remains current as of macOS Tahoe.
 	- Only characters within Big5 follow amalgam forms. HKSCS still follow Xin Zixing forms.
 - [DFHei Medium (華康中黑體)](https://www.dynacw.com.tw/product/product_download_detail.aspx?fid=102)\* from DynaComware.

@@ -78,11 +78,11 @@ By 10.6.3, the glyph shapes of Heiti TC were changed to modern forms (with split
 
 ### Late OS X Era
 
-In 2012, with the release of OS X 10.8 Mountain Lion, Apple included Lantinghei (蘭亭黑, designed by Founder (方正)) as one of the additional bundled optional Chinese fonts. The TC version follows that of the semi-modern amalgam forms. There doesn’t seem to be any complaints though as it isn’t a UI font. Till this day, even on macOS 26 Tahoe, the glyph shapes have not changed.
+In 2012, with the release of OS X 10.8 Mountain Lion, Apple included Lantinghei (蘭亭黑, designed by FounderType (方正)) as one of the additional bundled optional Chinese fonts. The TC version follows that of the semi-modern amalgam forms. There doesn’t seem to be any complaints though as it isn’t a UI font. Till this day, even on macOS 26 Tahoe, the glyph shapes have not changed.
 
 ![Lantinghei TC font example](/assets/img/posts/apple-lantinghei-tc.png){: width="800" height="400" }
 
-Founder has since updated Lantinghei TC to follow the Taiwan education forms (it is unclear when it happened and why did they choose to change the forms), however, Apple has not updated the forms. So enjoy the old amalgam forms for a while longer while you still can.
+FounderType has since updated Lantinghei TC to follow the Taiwan education forms (it is unclear when it happened and why did they choose to change the forms), however, Apple has not updated the forms. So enjoy the old amalgam forms for a while longer while you still can.
 
 In 2015, with the release of OS X 10.11 El Capitan, Apple introduced a new system font to replace Heiti SC/TC, Pingfang (蘋方), also designed by DynaComware.
 
