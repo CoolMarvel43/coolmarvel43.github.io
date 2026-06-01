@@ -19,6 +19,8 @@ I’m not going into details about Chinese character history, but basically Chin
 
 Fast forward to a time before Unicode (around the 1990s), computer operating systems sold in Asia, like Microsoft Windows and Apple’s System 7, had different fonts tailored for their different languages. In addition, the countries’ encoding systems to display their languages were totally separate and incompatible with each other.
 
+In the case of South Korea, Hangul is the dominant script, but basic system fonts support Hanja. For the sake of this article, the Hanja script is used for comparison with the Chinese and Japanese locales.
+
 ![The default CJK fonts as of Windows XP](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/MS_CJK_Fonts_XP.png)
 _In the good old Windows XP days (and earlier), from top to bottom, default language order: MS Gothic for Japan, designed by Ryobi Imagics Company Limited; SimSun for Simplified Chinese, designed by Beijing ZhongYi Electronics Company; MingLiU for Traditional Chinese (note the old forms used back then, except for 飯), designed by DynaComware; and Gulim for Korean, designed by HanYang. Notice that the Chinese fonts at that time were of the Ming typeface (analogous to serif), which was inconsistent with the sans-serif used in Japanese and Korean interfaces._
 
@@ -32,14 +34,14 @@ But I might be wrong on this, because actually, there are two problems with how 
 
 There are problems with Unicode and how they treated encoding Chinese characters in the beginning, but I will explain in further detail about this in a future article. Basically it boils down to this:
 
-**The first problem:** once Unicode web pages became common, without language tagging for CJK text, the OS determines the language order for which font goes first. The wrong use of language order will lead to a Chinese passage showing two or more fonts.
+**The first problem:** Once Unicode web pages became common, without language tagging for CJK text, the operating system (OS) determines the language order for which font goes first. The wrong use of language order will lead to a Chinese passage showing two or more fonts.
 
 Historically, in the late-1990s to early-2000s, the Japanese language took priority in computer operating systems due to Japan being a more significant market for the Western technology companies than China and Korea.
 
 Because of this, for Simplified Chinese text, the two font problem is more obvious. Japanese glyphs showed first, then when a Simplified Chinese character appeared, it appeared in a different font (because the Japanese font doesn't support the Simplified Chinese character). In rare cases, there will be boxes (☐, or tofu as some would like to call it) because there is no Simplified Chinese font installed at all.
 
-![](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Win_Chinese_Text_JP_First.png)
-_An example of a Simplified Chinese text rendered under the Windows default language order, which is Japanese first. Characters like 们, 长, and 务 are rendered in a different font (which may or may not be obvious), because the Japanese font does not support these characters, while other characters like 睛, 所 and 才 which can be rendered in the Japanese font are presented in an orthography which can be unfamiliar to primarily Simplified Chinese users (戸 vs 戶; 円 vs 月). Nowadays, Chromium browsers render Simplified Chinese first though. Text credit: [hskreading.com](https://hskreading.com)_
+![An example of a Simplified Chinese text rendered with the Japanese font put first before Traditional Chinese (Taiwan), which is the current Windows default language order](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Win_Chinese_Text_JP_First.png)
+_An example of a Simplified Chinese text rendered under the Windows default language order, which is Japanese first, followed by Traditional Chinese (Taiwan). Characters like 们, 长, and 务 are rendered in a different font (which may or may not be obvious), because the Japanese font does not support these characters, while other characters like 睛, 所 and 才 which can be rendered in the Japanese font are presented in an orthography which can be unfamiliar to primarily Simplified Chinese users (戸 vs 戶; 円 vs 月). Nowadays, Chromium browsers render Simplified Chinese first though. Text credit: [hskreading.com](https://hskreading.com)_
 
 **The second problem:** The use of language tags in websites like Wikipedia for short text passages means appropriate forms for Chinese characters will show up in mixed-language environments. A side effect is that Chinese characters now look inconsistent, and if one knows fonts well, it is easy to tell Japanese from Chinese just by looking at the font.
 
@@ -60,7 +62,7 @@ In 2007, with Windows Vista, Microsoft introduced their new sans-serif UI fonts 
 * Malgun Gothic for Korean, Hangul designed by Sandoll, although Hanja was only added in Windows 8, apparently designed by China Type Design Limited and Monotype (needs source)
 
 ![The default CJK fonts as of Windows Vista](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/MS_CJK_Fonts_Vista.png)
-_The Windows Vista/7/8 system fonts, in the default language order. Note that Hanja for Korean only showed up in Windows 8 and later, but I put it there for comparison._
+_The Windows Vista/7/8 system fonts, in the default language order. Note that Hanja for Malgun Gothic only showed up in Windows 8 and later, but it is put there for comparison._
 
 Unfortunately all those fonts are designed completely different with no regards to how they would look when used together. Microsoft Jhenghei in particular has a thinner weight than Microsoft YaHei and Meiryo, for what’s supposed to be a regular weight.
 
@@ -84,17 +86,17 @@ In the early Mac OS X era (let us take 10.5 Leopard as an example), in order of 
 - LiHei Pro, designed by DynaComware, for Traditional Chinese
 - AppleGothic, apparently designed by Choi Jeong-Ho (needs better source),[^3] for Korean
 
-![](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Early_Apple_CJK_Fonts.png)
+![The default CJK fonts as of Mac OS X 10.5 Leopard](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Early_Apple_CJK_Fonts.png)
 
 These fonts look wildly different when placed together. As with Windows, it became a problem when in the default language order for any non-CJK locale, Japanese was above Simplified Chinese (until sometime around the mid-2010s when the reverse happened, I cannot recall exactly when this happened, probably 10.10 Yosemite or 10.11 El Capitan?).
 
-In 2015, with the release of OS X 10.11 El Capitan, Apple introduced Pingfang (based off King Gothic by Dynacomware) to unify the look of Chinese characters while keeping regional differences between Mainland China, Taiwan and Hong Kong. However, it only stopped at Chinese, as Japanese and Korean are left untouched, also likely because for the latter, Chinese characters are not used much. As for the former, I believe Japanese still want Hiragino as their UI font, due to how well it works on screens, so they would not want another font.
+In 2015, with the release of OS X 10.11 El Capitan, Apple introduced Pingfang (based off King Gothic by Dynacomware) to unify the look of Chinese characters while keeping regional differences between Mainland China, Taiwan and Hong Kong. However, it only stopped at Chinese, as Japanese and Korean are left untouched; because for the latter, as mentioned earlier, Chinese characters are not used much. As for the former, I believe the Japanese still want Hiragino as their UI font, due to how well it works on screens, so they would not want another font to keep things looking familiar and not to break things.
 
 Later, as of macOS 15 Sequoia and iOS 18, for Japanese, W4 is now used as the default weight for Hiragino Sans instead of W3, which is intended to reduce the perceived inconsistency when being used alongside Chinese fonts, however, it does not fundamentally solve the different typeface design problem.
 
 This is the current system fonts as of macOS 26 Tahoe.
 
-![](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Apple_CJK_Fonts.png)
+![The default CJK fonts as of macOS 26 Tahoe](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Apple_CJK_Fonts.png)
 _macOS 26 Tahoe system fonts. While arguably better than Windows, there is still some typeface distinction between Chinese, Japanese and Korean._
 
 ## Any workarounds to this font inconsistency?
@@ -117,7 +119,7 @@ A minor downside of font unification is that it won't be easy to tell what font 
 
 And finally, if let's say there's a new typeface that can unify the look across different East Asian locales, Traditional Chinese should include a neutral region with neutral glyphs, not just educational forms from a particular region, and maybe this should be the default for anything that isn't language-tagged, but that, again, is another story.
 
-![](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Apple_CJK_Fonts_WhatIf.png)
+![What if... a unified Pingfang CJK font for all CJK locales](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/Apple_CJK_Fonts_WhatIf.png)
 _What if... a unified Pingfang CJK font for all CJK locales_
 
 ## References
