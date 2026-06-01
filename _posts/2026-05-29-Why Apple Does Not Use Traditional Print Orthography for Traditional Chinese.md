@@ -49,49 +49,49 @@ Let us go through the history of what Chinese fonts looked like, from Classic Ma
 
 In System 5 (the earliest recorded Traditional Chinese version of macOS)[^4] the bitmap font’s glyph shapes were closer to educational forms, although there are some minor stroke details that are considered non-standard today. Design wise, it doesn’t look professional.
 
-![System 5 Traditional Chinese](/assets/img/posts/apple-system5-tc.png){: width="800" height="400" }
+![System 5 Traditional Chinese](/assets/img/posts/2026-05-29_apple-not-traditional/apple-system5-tc.png){: width="800" height="400" }
 _Credit: [feng270](https://feng270.blog.fc2.com/blog-entry-130.html)_
 
 Later on, around Mac OS 8-9, the first Traditional Chinese TrueType fonts, Apple LiGothic (蘋果儷中黑) and Apple LiSung (蘋果儷細宋), designed by DynaComware, follow modern forms with split strokes. The Taipei pixel font in those versions also apparently follows the modern forms based on Apple LiSung. They have a much improved design and at the same time brought *some* elements of traditional print orthography (emphasising the split strokes) to the Traditional Chinese user interface, but not wholly.
 
-![Mac OS 9 Traditional Chinese](/assets/img/posts/apple-os9-tc.png){: width="800" height="400" }
+![Mac OS 9 Traditional Chinese](/assets/img/posts/2026-05-29_apple-not-traditional/apple-os9-tc.png){: width="800" height="400" }
 _Credit: [feng270](https://feng270.blog.fc2.com/blog-entry-132.html)_
 
 ### Early Mac OS X Era
 
 In the early Mac OS X era, Apple LiGothic was the user interface for the Traditional Chinese version. In 10.3 Panther, it was replaced with LiHei Pro (儷黑 Pro),[^5] which expanded the glyph set for Hong Kong use, and changed some glyph shapes to make it more palatable between Taiwan and Hong Kong.
 
-![Mac OS X 10.2 Traditional Chinese](/assets/img/posts/apple-os10-2-tc.jpg){: width="800" height="200" }
+![Mac OS X 10.2 Traditional Chinese](/assets/img/posts/2026-05-29_apple-not-traditional/apple-os10-2-tc.jpg){: width="800" height="200" }
 _Credit: [National Taiwan Ocean University](https://stu.ntou.edu.tw/p/404-1023-48907.php?Lang=zh-tw)_
-![LiHei Pro font example](/assets/img/posts/apple-ui-font-1.png){: width="800" height="400" }
+![LiHei Pro font example](/assets/img/posts/2026-05-29_apple-not-traditional/apple-ui-font-1.png){: width="800" height="400" }
 
 In 2009, when Mac OS X 10.6 Snow Leopard was released, an early version of Heiti TC (黑體-繁, with two weights, designed by Changzhou SinoType) replaced LiHei Pro (which had only one weight).[^6] This version followed closely to the old printing forms (although with some inconsistencies).[^7]
 
-![Mac OS X 10.6.0 Traditional Chinese](/assets/img/posts/apple-os10-6-0-tc.png){: width="800" height="400" }
+![Mac OS X 10.6.0 Traditional Chinese](/assets/img/posts/2026-05-29_apple-not-traditional/apple-os10-6-0-tc.png){: width="800" height="400" }
 _Credit: [Meow Wang, mobile01 (黑體-繁，其實是個好字型)](https://www.mobile01.com/topicdetail.php?f=177&t=1214845) (Image scaled up for better clarity)_
 
 Apparently for the users, seeing those forms was a step backwards in progress. Because they were so used to the glyph shapes of LiHei Pro, they deemed the forms in the original Heiti TC inappropriate. So they complained online and demanded Apple fix the glyph shapes.[^8] It also led to a creation of a program called TCFail to change the system font back to LiHei Pro (or any other font desired).[^9][^10]
 
 By 10.6.3, the glyph shapes of Heiti TC were changed to modern forms (with split strokes),[^11] and those people who complained breathed a sigh of relief,[^12] but the minority who preferred the old forms were indeed very disappointed.[^13]
 
-![Heiti TC changes](/assets/img/posts/apple-ui-font-2.png){: width="800" height="400" }
+![Heiti TC changes](/assets/img/posts/2026-05-29_apple-not-traditional/apple-ui-font-2.png){: width="800" height="400" }
 
 ### Late OS X Era
 
 In 2012, with the release of OS X 10.8 Mountain Lion, Apple included Lantinghei (蘭亭黑, designed by FounderType (方正)) as one of the additional bundled optional Chinese fonts. The TC version follows that of the semi-modern amalgam forms. There doesn’t seem to be any complaints though as it isn’t a UI font. Till this day, even on macOS 26 Tahoe, the glyph shapes have not changed.
 
-![Lantinghei TC font example](/assets/img/posts/apple-lantinghei-tc.png){: width="800" height="400" }
+![Lantinghei TC font example](/assets/img/posts/2026-05-29_apple-not-traditional/apple-lantinghei-tc.png){: width="800" height="400" }
 
 FounderType has since updated Lantinghei TC to follow the Taiwan education forms (it is unclear when it happened and why did they choose to change the forms), however, Apple has not updated the forms. So enjoy the old amalgam forms for a while longer while you still can.
 
 In 2015, with the release of OS X 10.11 El Capitan, Apple introduced a new system font to replace Heiti SC/TC, Pingfang (蘋方), also designed by DynaComware.
 
-![OS X El Capitan’s homepage promoting Pingfang](/assets/img/posts/apple-el-capitan-chinese-promo.jpg){: width="800" height="400" }
+![OS X El Capitan’s homepage promoting Pingfang](/assets/img/posts/2026-05-29_apple-not-traditional/apple-el-capitan-chinese-promo.jpg){: width="800" height="400" }
 _OS X El Capitan’s homepage promoting Pingfang. Ironically, on the English page, the 果 character appears to have been set in the Kozuka Gothic (or Source Han Sans) typeface, when the heaviest weight in the final version of Pingfang at that time is only Semibold, which is nothing like the heaviest weight seen in the picture on the right, but more like third from right. So it was misleading on what the then-upcoming font family would look like. Credit: [Chinese Mac](https://chinesemac.org/pages/osx11.html)_
 
 Pingfang TC follows Taiwan educational forms (despite the TC naming which is supposed to represent all regions that use Traditional Chinese, which can lead to confusion), whereas Pingfang HK follows the Hong Kong educational standard, which at least gives those users the more “correct” forms.
 
-![Pingfang font example](/assets/img/posts/apple-pingfang.png){: width="800" height="400" }
+![Pingfang font example](/assets/img/posts/2026-05-29_apple-not-traditional/apple-pingfang.png){: width="800" height="400" }
 
 ## Also related: A sudden change in Hiragino Sans CNS glyph shapes
 
@@ -99,7 +99,7 @@ In the development preview of Mac OS X Snow Leopard, there was an early unfinish
 
 By the looks of it, it was originally planned for the font to roughly adopt the semi-modern amalgam format, as evidenced by a mishmash of Japanese and Simplified Chinese glyphs. In addition, there were some customised glyphs in that orthography format that were not found in the original Japanese font (for which the maximum character set for macOS is Adobe-Japan1-5, and still is), although some of the radical designs weren't consistent, especially the 辶 and 糸 radicals. It seemed like SCREEN was planning to go for a one-dot 辶 radical (like the original JP version, although U+35FB 㗻 and U+48AD 䢭 is shown with two dots in the below picture) and a LiHei Pro-style 糸 radical, which would technically deviate from the semi-modern amalgam format and go into traditional-handwritten hybrid forms.
 
-![Hiragino Sans CNS unique glyphs](/assets/img/posts/hiragino_sans_cns_original_extended_amalgam_glyphs.jpg){: width="800" height="400" }
+![Hiragino Sans CNS unique glyphs](/assets/img/posts/2026-05-29_apple-not-traditional/hiragino_sans_cns_original_extended_amalgam_glyphs.jpg){: width="800" height="400" }
 _The uniquely-designed semi-modern amalgam forms of the original Hiragino Sans CNS. Credit: 傳承字形之美 Facebook group (I can't remember the exact post or who the original author is, sorry)_
 
 Peculiarly, after being first seen in the development preview version of Mac OS X Snow Leopard, development seemingly stopped for years, until in 2017, when the font was officially finalised,[^14] but the design direction had completely changed to those resembling Taiwan educational forms (although not fully compliant).
@@ -108,7 +108,7 @@ It is unclear why SCREEN had to change direction and who asked them to do it. Bu
 
 It was only until macOS 11 Big Sur, in 2020, that Apple finally updated the font. It ended the inconsistency of mixed traditional-handwritten orthography, but it also meant the loss of what could have been: a (somewhat) traditional printing form of Hiragino Sans for Traditional Chinese.
 
-![Hiragino Sans CNS changes](/assets/img/posts/hiragino_sans_cns_comparison.png){: width="800" height="400" }
+![Hiragino Sans CNS changes](/assets/img/posts/2026-05-29_apple-not-traditional/hiragino_sans_cns_comparison.png){: width="800" height="400" }
 
 ## But on Windows, they say MingLiU looks ugly now
 
@@ -116,17 +116,17 @@ Now, I will digress from Apple, so I can talk about why people complained about 
 
 Throughout the 1990s and early 2000s, Windows had their Traditional Chinese user interface font, MingLiU, shown in old forms. However though, Windows 3.0 (released in 1991 for Taiwan) had the bitmap font shown as Taiwan educational forms (albeit an early version which slightly differs from today’s version). Windows 3.1 (released in 1993 for Taiwan) changed the font to old forms for unknown reasons.
 
-![Windows 3.0 Traditional Chinese](/assets/img/posts/win-3-0-tc.png){: width="800" height="400" }
+![Windows 3.0 Traditional Chinese](/assets/img/posts/2026-05-29_apple-not-traditional/win-3-0-tc.png){: width="800" height="400" }
 _Windows 3.0. Credit: [feng270](https://feng270.blog.fc2.com/blog-entry-54.html)_
 
-![Windows 3.1 Traditional Chinese](/assets/img/posts/win-3-1-tc.jpg){: width="800" height="400" }
+![Windows 3.1 Traditional Chinese](/assets/img/posts/2026-05-29_apple-not-traditional/win-3-1-tc.jpg){: width="800" height="400" }
 _Windows 3.1. Credit: [Unknown source, via justfont blog](https://blog.justfont.com/2012/10/字體始終取決於載體-上/)_
 
 There were some glyph changes to the font in Windows XP. For example, the left 飠 radical was modified into modern Taiwan forms, with the split stroke 𠄌 not being too prominent. Otherwise the font was still mostly based on old forms.
 
 In 2007, around the release of Windows Vista, when MingLiU was updated to educational forms (and was also extended to Windows XP via an update package), people complained about the font suddenly looking ugly.[^15] But Microsoft refused to change it back, likely because they had to comply to using such forms.
 
-![MingLiU changes](/assets/img/posts/mingliu-before-after.png){: width="800" height="400" }
+![MingLiU changes](/assets/img/posts/2026-05-29_apple-not-traditional/mingliu-before-after.png){: width="800" height="400" }
 
 Also, Microsoft Jhenghei (微軟正黑體), released the same year, also followed the educational forms set by Taiwan. It was also the first time sans-serif typefaces were used as user interface fonts for Chinese, whereas previously Ming/Song (serif) typefaces were used, bringing it in line with Japanese/Korean interfaces which, in contrast, have historically used sans serif as their UI fonts, and still do for a good reason.
 

@@ -41,7 +41,7 @@ Examples of these type of forms are given to ensure a better understanding.
 - [i.Ming (一點明體)](https://github.com/ichitenfont/I.Ming), also based on IPAexMincho/IPAmjMincho, expanded to cover most of Traditional Chinese (up to [Suppchara](https://github.com/ichitenfont/suppchara), i.Ming's character list for HK use, not the entire HKSCS character set) and the glyphs modified to be the basis of a standard based on historical Chinese character etymologies rather than on 20th century orthographies. Also a honourable mention here, because this is the first TC font based on IPAmjMincho before LXGW ZhiSong CL.
 - [Huiwen-HKHei (匯文港黑)](https://zhuanlan.zhihu.com/p/12669052378), based on phototype negative scans of a Heiti font used in Hong Kong in the 1980s-1990s. Original source is claimed to be Iwata Gothic from Japan.
 
-![Examples of Old forms](/assets/img/posts/tc_1_old.png){: width="400" height="200" .normal }
+![Examples of Old forms](/assets/img/posts/2026-05-20_tc-forms/tc_1_old.png){: width="400" height="200" .normal }
 
 In the case of old forms, the same Unicode codepoints are used to demonstrate most fonts mapping to a glyph that should be in another codepoint, due to Source Separation Rule (e.g. U+70BA 為 vs U+7232 爲). This can be a point of contention as on one hand, modern forms must be used if glyph shapes must be differentiated for technical or academic reasons, and on the other hand, it breaks component consistency since the modern and basic Chinese character sets may not allow for alternate codepoints very easily. In addition, Chinese input methods will always point to the common form first.
 
@@ -62,7 +62,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 	- To achieve the amalgam look quickly, a lot of CN/TW/HK glyphs are used directly, with attempts to reduce the Xin Zixing elements from folding strokes where such glyphs are used, via filter processing (as mentioned earlier).
 - LXGW XiHei/ZhiSong MN (霞鶩晰黑/霞鶩緻宋 MN)
 
-![Examples of Amalgam forms](/assets/img/posts/tc_2_amalgam.png){: width="400" height="200" .normal }
+![Examples of Amalgam forms](/assets/img/posts/2026-05-20_tc-forms/tc_2_amalgam.png){: width="400" height="200" .normal }
 
 ### Modern forms (split strokes)
 - Apple LiGothic (蘋果儷中黑)\*\* and Apple LiSung (蘋果儷細宋)\*\* by DynaComware.
@@ -71,7 +71,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - Songti TC (宋體-繁)\*\* by Changzhou Sinotype.
 - [justfont Jinxuan (jf 金萱)](https://justfont.com/jinxuan/)\*, except for the 辶 radical which follows old forms, and I wasn't completely sure if this should fall under the Traditional-handwritten hybrid forms category.
 
-![Examples of Modern forms (split strokes)](/assets/img/posts/tc_3a_modern_split.png){: width="400" height="200" .normal }
+![Examples of Modern forms (split strokes)](/assets/img/posts/2026-05-20_tc-forms/tc_3a_modern_split.png){: width="400" height="200" .normal }
 
 ### Modern forms (no split strokes)
 - [MHei HK](https://www.myfonts.com/collections/m-hei-hk-font-monotype-hk/)\* by Monotype HK.
@@ -82,7 +82,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - [AR UD JingXiHei (文鼎UD晶熙黑體)](https://en.morisawa.co.jp/fonts/specimen/13813)\*; while some forms, like the 辶 radical, resemble those used in Mainland China, some components like 骨 do not follow the PRC standard.
 - [AR ShuYuanSong (文鼎書苑宋)](https://en.morisawa.co.jp/fonts/specimen/13807)\*; ditto.
 
-![Examples of Modern forms (no split strokes)](/assets/img/posts/tc_3b_modern_nosplit.png){: width="400" height="200" .normal }
+![Examples of Modern forms (no split strokes)](/assets/img/posts/2026-05-20_tc-forms/tc_3b_modern_nosplit.png){: width="400" height="200" .normal }
 
 ### Educational forms
 - [Microsoft JhengHei (微軟正黑體)](https://learn.microsoft.com/en-us/typography/font-list/microsoft-jhenghei)\*\*
@@ -93,7 +93,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - [LINE Seed TW](https://seed.line.me/index_tw.html), originally designed by Fontworks (at least for the ideographs, as LINE Seed JP), then extended to Traditional Chinese by DynaComware, and modified into mostly educational forms.
   - However, it is not fully educational forms, because there is a press stroke 乀 instead of what’s supposed to be the dot stroke 丶 in components like 八, 六, 貝, 大, 吳, 美, due to inheriting the design choice from LINE Seed JP, and the meat 肉月 radical is not Taiwan MOE style.
 
-![Examples of Educational forms](/assets/img/posts/tc_4_edu.png){: width="400" height="200" .normal }
+![Examples of Educational forms](/assets/img/posts/2026-05-20_tc-forms/tc_4_edu.png){: width="400" height="200" .normal }
 
 ### Traditional-handwritten hybrid forms
 - [Morisawa A1 Gothic Traditional Chinese](https://en.morisawa.co.jp/fonts/specimen/13562)\*; most components fall under semi-modern amalgam forms, except the 厶 and 糹  components follow modern handwritten forms.
@@ -102,7 +102,7 @@ In the case of old forms, the same Unicode codepoints are used to demonstrate mo
 - MHei HK XBold\*; An older example, with idiosyncratic features like half of the components belonging to old forms while other components like 令, 言 and 亠 have handwritten forms. Even the simplified PRC version has elements of old forms as seen in the 纟 radical.
 - [Huayuan Gothic (樺源黑體)](https://github.com/lapomme/huayuan) - The only free and open source font I can find that is of this format, based on Source Han Sans and Chiron Hei HK. No longer maintained since 2022.
 
-![Examples of Traditional-handwritten hybrid forms](/assets/img/posts/tc_5_hybrid.png){: width="400" height="200" .normal }
+![Examples of Traditional-handwritten hybrid forms](/assets/img/posts/2026-05-20_tc-forms/tc_5_hybrid.png){: width="400" height="200" .normal }
 
 \* Paid commercial typeface\
 \** Commercial typeface bundled with an operating system (like Mac/Windows)
