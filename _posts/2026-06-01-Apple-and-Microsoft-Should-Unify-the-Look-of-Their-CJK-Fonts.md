@@ -17,9 +17,9 @@ In this article, the history of separately designed and developed CJK typefaces 
 
 I’m not going into details about Chinese character history, but basically Chinese characters (漢字, hanzi) is one of the oldest writing systems for at least three millennia, and they eventually spread to Japan (kanji) and Korea (hanja), for which they had their own developments separate from China.
 
-Fast forward to a time before Unicode (around the 1990s), computer operating systems sold in Asia, like Microsoft Windows and Apple’s System 7, had different fonts tailored for their different languages. In addition, the countries’ encoding systems to display their languages were totally separate and incompatible with each other.
+In the case of South Korea, Hangul is the dominant script in modern times, but basic system fonts support Hanja. For the sake of this article, the Hanja script is used for comparison with the Chinese and Japanese locales.
 
-In the case of South Korea, Hangul is the dominant script, but basic system fonts support Hanja. For the sake of this article, the Hanja script is used for comparison with the Chinese and Japanese locales.
+Fast forward to a time before Unicode (around the 1990s), computer operating systems sold in Asia, like Microsoft Windows and Apple’s System 7, had different fonts tailored for their different languages. In addition, the countries’ encoding systems to display their languages were totally separate and incompatible with each other.
 
 ![The default CJK fonts as of Windows XP](/assets/img/posts/2026-06-01_apple_microsoft_unify_fonts/MS_CJK_Fonts_XP.png)
 _In the good old Windows XP days (and earlier), from top to bottom, default language order: MS Gothic for Japan, designed by Ryobi Imagics Company Limited; SimSun for Simplified Chinese, designed by Beijing ZhongYi Electronics Company; MingLiU for Traditional Chinese (note the old forms used back then, except for 飯), designed by DynaComware; and Gulim for Korean, designed by HanYang. Notice that the Chinese fonts at that time were of the Ming typeface (analogous to serif), which was inconsistent with the sans-serif used in Japanese and Korean interfaces._
