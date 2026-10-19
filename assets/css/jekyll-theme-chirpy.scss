@@ -1,6 +1,10 @@
 ---
 ---
 
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
 /* prettier-ignore */
 @use 'main
 {%- if jekyll.environment == 'production' -%}
@@ -17,12 +21,12 @@
    COLOURS HERE
    ===================================================== */
 
-html {
+html:root {
   @media (prefers-color-scheme: dark) {
 
     /* Default (system dark) OR user clicked dark toggle */
-    &:not([data-mode]),
-    &[data-mode='dark'] {
+    &[data-bs-theme='dark'],
+    &[data-bs-theme='dark'] {
       --sidebar-bg:           #131320;
       --sidebar-active-color: #ffffff;
       --sidebar-muted-color:  #ffffff;
@@ -51,7 +55,7 @@ html {
     }
 
     /* User clicked light toggle while system is dark */
-    &[data-mode='light'] {
+    &[data-bs-theme='light'] {
       --sidebar-bg:           #e6ecff;
       --sidebar-active-color: #e65100;
       --sidebar-muted-color:  #000000;
@@ -101,14 +105,14 @@ html {
 @media (prefers-color-scheme: dark) {
 
   /* Dark mode odd rows */
-  html:not([data-mode]) #archives li:nth-child(odd),
-  html[data-mode='dark'] #archives li:nth-child(odd) {
+  html[data-bs-theme='dark'] #archives li:nth-child(odd),
+  html[data-bs-theme='dark'] #archives li:nth-child(odd) {
     background-image: none !important;
     background-color: #22201b !important;
   }
 
   /* Light mode odd rows (user toggled light while system is dark) */
-  html[data-mode='light'] #archives li:nth-child(odd) {
+  html[data-bs-theme='light'] #archives li:nth-child(odd) {
     background-image: none !important;
     background-color: #ecf2f8 !important; /* a light blue tint to match your light sidebar */
   }
@@ -132,12 +136,12 @@ h1, h2, h3, h4, h5, h6,
 
 /* Post description colours for light and dark mode */
 @media (prefers-color-scheme: dark) {
-  html:not([data-mode]) .post-desc,
-  html[data-mode='dark'] .post-desc {
+  html[data-bs-theme='dark'] .post-desc,
+  html[data-bs-theme='dark'] .post-desc {
     color: #cccccc !important;
   }
 
-  html[data-mode='light'] .post-desc {
+  html[data-bs-theme='light'] .post-desc {
     color: #333333 !important;
   }
 }
@@ -148,48 +152,48 @@ h1, h2, h3, h4, h5, h6,
 @media (prefers-color-scheme: dark) {
 
   /* Normal state */
-  html:not([data-mode]) .post-navigation .btn.btn-outline-primary,
-  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary {
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary {
     background-color: #000000 !important;
     border-color: #444444 !important;
     color: #ff9900 !important;
   }
 
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary {
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary {
     background-color: #ffffff !important;
     border-color: #cccccc !important;
     color: #e65100 !important;
   }
 
   /* OLDER/NEWER label colour */
-  html:not([data-mode]) .post-navigation .btn.btn-outline-primary::before,
-  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary::before {
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary::before,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary::before {
     color: #ffffff !important;
   }
 
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary::before {
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary::before {
     color: #000000 !important;
   }
 
   /* Also on hover */
-  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before,
-  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before {
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before {
     color: #ffffff !important;
   }
 
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before,
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus::before,
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):active::before {
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover::before,
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus::before,
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):active::before {
     color: #000000 !important;
   }
 
   /* Hover/focus/active state */
-  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
-  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
-  html:not([data-mode]) .post-navigation .btn.btn-outline-primary:not(.disabled):active,
-  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
-  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
-  html[data-mode='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):active {
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):active,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
+  html[data-bs-theme='dark'] .post-navigation .btn.btn-outline-primary:not(.disabled):active {
     background-color: #9b5d00 !important;
     border-color: #9b5d00 !important;
     color: #ffffff !important;
@@ -197,9 +201,9 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none !important;
   }
 
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
-  html[data-mode='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):active {
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):hover,
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):focus,
+  html[data-bs-theme='light'] .post-navigation .btn.btn-outline-primary:not(.disabled):active {
     background-color: #FFC164 !important;
     border-color: #FFC164 !important;
     color: #000000 !important;
@@ -215,26 +219,26 @@ h1, h2, h3, h4, h5, h6,
 @media (prefers-color-scheme: dark) {
 
   /* Normal state */
-  html:not([data-mode]) .post-tag,
-  html[data-mode='dark'] .post-tag {
+  html[data-bs-theme='dark'] .post-tag,
+  html[data-bs-theme='dark'] .post-tag {
     background-color: #000000 !important;
     border-color: #444444 !important;
     color: #ff9900 !important;
   }
 
-  html[data-mode='light'] .post-tag {
+  html[data-bs-theme='light'] .post-tag {
     background-color: #ffffff !important;
     border-color: #cccccc !important;
     color: #555555 !important;
   }
 
   /* Hover/focus/active state — same pattern that worked for post nav */
-  html:not([data-mode]) .post-tag.btn.btn-outline-primary:not(.disabled):hover,
-  html:not([data-mode]) .post-tag.btn.btn-outline-primary:not(.disabled):focus,
-  html:not([data-mode]) .post-tag.btn.btn-outline-primary:not(.disabled):active,
-  html[data-mode='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
-  html[data-mode='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
-  html[data-mode='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):active {
+  html[data-bs-theme='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
+  html[data-bs-theme='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
+  html[data-bs-theme='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):active,
+  html[data-bs-theme='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
+  html[data-bs-theme='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
+  html[data-bs-theme='dark'] .post-tag.btn.btn-outline-primary:not(.disabled):active {
     background-color: #131826 !important;
     border-color: #3b4f58 !important;
     color: #ffffff !important;
@@ -243,8 +247,8 @@ h1, h2, h3, h4, h5, h6,
   }
 
   /* Fallback for post tags without Bootstrap classes */
-  html:not([data-mode]) .post-tag:hover,
-  html[data-mode='dark'] .post-tag:hover {
+  html[data-bs-theme='dark'] .post-tag:hover,
+  html[data-bs-theme='dark'] .post-tag:hover {
     background-color: #131826 !important;
     border-color: #3b4f58 !important;
     color: #ffffff !important;
@@ -252,9 +256,9 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none !important;
   }
 
-  html[data-mode='light'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
-  html[data-mode='light'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
-  html[data-mode='light'] .post-tag.btn.btn-outline-primary:not(.disabled):active {
+  html[data-bs-theme='light'] .post-tag.btn.btn-outline-primary:not(.disabled):hover,
+  html[data-bs-theme='light'] .post-tag.btn.btn-outline-primary:not(.disabled):focus,
+  html[data-bs-theme='light'] .post-tag.btn.btn-outline-primary:not(.disabled):active {
     background-color: #dae1f5 !important;
     border-color: #dee2e6 !important;
     color: #000000 !important;
@@ -263,7 +267,7 @@ h1, h2, h3, h4, h5, h6,
   }
 
   /* Fallback for light mode post tags without Bootstrap classes */
-  html[data-mode='light'] .post-tag:hover {
+  html[data-bs-theme='light'] .post-tag:hover {
     background-color: #dae1f5 !important;
     border-color: #dee2e6 !important;
     color: #000000 !important;
@@ -271,4 +275,15 @@ h1, h2, h3, h4, h5, h6,
     box-shadow: none !important;
   }
 
+}
+
+/* =====================================================
+   SIDEBAR SPACING — restore 7.5.0 layout
+   ===================================================== */
+#sidebar .profile-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+#sidebar .profile-wrapper .site-subtitle {
+  height: 3.0rem;
 }
